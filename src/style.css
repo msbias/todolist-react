@@ -1,17 +1,56 @@
-h1,
-p {
-  font-family: Lato;
+h1 {
+  font-family: monospace;
   color: blue;
-} 
+  text-align: left;
+  border: 0.8px round grey;
+}
 
-#header {
+#app {
   margin-top: 5px;
-  height: 80px;
+  text-align: left;
+  height: auto;
   width: 800px;
   border: 1px round darkgray;
-  background-color: lightgray;
+  font-family: monospace;
 }
 
 label {
-  display:block;
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 15px;
+}
+
+#list-item {   
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: bold;
+}
+ul {
+  list-style: none;
+}
+
+#add-button {
+  margin-left: 5px;
+  color: blue;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: monospace;
+  background-color: white;
+  border: 2px round blue;
+}
+
+#add-button:hover {
+  background-color: gray;
+  color:white;
+  cursor: pointer;
+}
+
+#add-item-input {
+  border: 1px solid blue;
+  padding: 8px;
+  border-radius: 10px;
 }

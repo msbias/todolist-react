@@ -24,13 +24,14 @@ class Item extends React.Component {
     const item = this.props.item;
     return (
       <form onSubmit={this.handleSubmit}>
-        <label> Enter Item To Do </label>
+        <label> Enter Item To Do: </label>
         <input
+          id="add-item-input"
           type="text"
           value={this.state.value}
           onChange={this.handleChange}
         />
-        <input type="submit" value="Submit" />
+        <input id="add-button" type="submit" value="Add" />
       </form>
     );
   }

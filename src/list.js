@@ -22,11 +22,10 @@ class List extends React.Component {
     const item = this.state.item;
     return (
       <div>
-        <Item itemChanged={this.itemChanged} />
-        <h5> List </h5>
+        <Item itemChanged={this.itemChanged} /> 
         <ul>
           {this.state.list.map(name => {
-            return <li> {name} </li>;
+            return <li id="list-item"> {name} </li>;
           })}
         </ul>
       </div>

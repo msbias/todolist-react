@@ -8,7 +8,7 @@ export default function App() {
   let text = 'IT';
 
   return (
-    <div id="header">
+    <div id="app">
       <h1>To Do </h1>
       <List />
     </div>
