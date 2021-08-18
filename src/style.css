@@ -1,0 +1,17 @@
+h1,
+p {
+  font-family: Lato;
+  color: blue;
+} 
+
+#header {
+  margin-top: 5px;
+  height: 80px;
+  width: 800px;
+  border: 1px round darkgray;
+  background-color: lightgray;
+}
+
+label {
+  display:block;
+}
