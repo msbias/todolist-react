@@ -8,9 +8,9 @@ class List extends React.Component {
     super(props);
     this.state = { item: '', list: [] };
     this.itemChanged = this.itemChanged.bind(this);
+    this.clearItems = this.clearItems.bind(this);
   }
   itemChanged(item) {
-    console.log(item);
     if (item.length > 0) {
       let tempList = [];
       tempList = [...this.state.list];
@@ -18,11 +18,17 @@ class List extends React.Component {
       this.setState({ list: tempList });
     }
   }
+
+  clearItems(clear) {
+    if (clear) {
+      this.setState({ list: [] });
+    }
+  }
   render() {
     const item = this.state.item;
     return (
       <div>
-        <Item itemChanged={this.itemChanged} /> 
+        <Item itemChanged={this.itemChanged} clearItems={this.clearItems} />
         <ul>
           {this.state.list.map(name => {
             return <li id="list-item"> {name} </li>;

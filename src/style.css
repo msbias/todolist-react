@@ -30,7 +30,7 @@ ul {
   list-style: none;
 }
 
-#add-button {
+#add-button, #clear-button {
   margin-left: 5px;
   color: blue;
   border-radius: 10px;

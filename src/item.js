@@ -7,6 +7,7 @@ class Item extends React.Component {
     super(props);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleClear = this.handleClear.bind(this);
     this.state = { value: '' };
   }
 
@@ -18,6 +19,10 @@ class Item extends React.Component {
     this.props.itemChanged(this.state.value);
     event.preventDefault();
     this.state.value = '';
+  }
+
+  handleClear() {
+    this.props.clearItems(true);
   }
 
   render() {
@@ -32,6 +37,9 @@ class Item extends React.Component {
           onChange={this.handleChange}
         />
         <input id="add-button" type="submit" value="Add" />
+        <button id="clear-button" onClick={this.handleClear}>
+          Clear
+        </button>
       </form>
     );
   }
